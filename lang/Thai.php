@@ -1,3 +1,25 @@
+<!--
+// =========================================================================
+//    ______                                              
+//   / __/ /____ ________ ____ ___ _  ___ ___             
+//  _\ \/ __/ _ `/ __/ _ `/ _ `/  ' \/ -_|_-<             
+// /___/\__/\_,_/_/  \_, /\_,_/_/_/_/\__/___/             
+//   _____          /___/        __  ___                __
+//  / ___/__  ___  / /________  / / / _ \___ ____  ___ / /
+// / /__/ _ \/ _ \/ __/ __/ _ \/ / / ___/ _ `/ _ \/ -_) / 
+// \___/\___/_//_/\__/_/  \___/_/ /_/   \_,_/_//_/\__/_/ 
+// =========================================================================
+// Copyright (c) Stargames Control Panel - Licensed under GNU GPL.
+// See LICENSE File
+// =========================================================================
+// Project Lead by: Mysterious
+// =========================================================================
+// This is the Thai Language file that is associated with Stargames Control Panel.
+// If you wish, you may change the 'Sentences' in quotes " " to whatever you wish.
+// Keep in mind to not change the words in ' ' if you are unsure on what you're doing.
+// =========================================================================
+// Note: This needs to be translated.
+-->
 <?php
 $lang = array(
 
