@@ -167,7 +167,7 @@ while ($RIG = $sql->fetch_row()) {
 		$showid.= " AND account_id != \"".mysql_res((int)$RIG[account_id])."\"";
 }
 if(!$CONFIG_show_gm_ranking) {
-	$query = "SELECT account_id FROM $CONFIG_sql_dbname.login WHERE level>=\"".mysql_res($CONFIG_min_gmlv_ranking)."\"";
+	$query = "SELECT account_id FROM $CONFIG_sql_dbname.login WHERE group_id>=\"".mysql_res($CONFIG_min_groupid_ranking)."\"";
 	$sql->result = $sql->execute_query($query,'player_rank.php');$sql->total_query++;
 	while ($RGM = $sql->fetch_row()) {
 		if(!$i) {

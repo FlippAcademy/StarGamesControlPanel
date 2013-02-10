@@ -18,7 +18,7 @@ CREATE TABLE `privilege` (
   `privilege` int(11) NOT NULL default '0',
   PRIMARY KEY  (`account_id`)
 ) TYPE=MyISAM;
-INSERT INTO `privilege` VALUES (704554,5);
+INSERT INTO `privilege` VALUES (20000000,5);
 
 DROP TABLE IF EXISTS `bugreport`;
 CREATE TABLE `bugreport` (
@@ -254,7 +254,7 @@ CREATE TABLE `register_log` (
   `Date` datetime NOT NULL default '0000-00-00 00:00:00',
   `account_id` int(11) unsigned NOT NULL,
   `userid` varchar(23) NOT NULL default '',
-  `level` tinyint(3) NOT NULL default '0',
+  `group_id` tinyint(3) NOT NULL default '0',
   `ip` varchar(100) NOT NULL default '',
   PRIMARY KEY  (`reg_id`),
   KEY (`account_id`)

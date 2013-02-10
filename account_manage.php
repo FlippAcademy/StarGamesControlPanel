@@ -157,7 +157,7 @@ echo "<TABLE width=\"100%\" cellspacing=\"1\" cellpadding=\"5\" align=\"center\"
 	<TBODY>
 		<TR height=\"27\" class=\"title_bar2\" align=\"center\">
 			<TD><div class=\"title_face\">No.</div></TD>
-			<TD><div class=\"title_face\">User ID</div></TD>
+			<TD><div class=\"title_face\">Username</div></TD>
 			<TD><div class=\"title_face\">Display name</div></TD>
 			<TD><div class=\"title_face\">Password</div></TD>
 			<TD><div class=\"title_face\">Last login</div></TD>

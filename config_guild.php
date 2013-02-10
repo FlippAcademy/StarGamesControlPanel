@@ -17,7 +17,6 @@
 -->
 <?php
 // Guild Standing Settings
-// ระบุโหมดของการของปราสาทที่มีกิลดิ์ยึดครอง (0 : ไม่แสดงกิลดิ์ที่ยึดครอง 1 : แสดงกิลดิ์ที่ยึดครอง)
 $GUILD_CASTLE[0]		=	'1';	// Aldebaran - Neuschwanstein
 $GUILD_CASTLE[1]		=	'1';	// Aldebaran - Hohenschwangau
 $GUILD_CASTLE[2]		=	'1';	// Aldebaran - Nuenberg

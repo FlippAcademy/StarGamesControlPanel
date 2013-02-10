@@ -224,7 +224,7 @@ switch($name) {
 }
 
 function get_attn_reg($check,$val,$val2) {
-header("Content-type: text/xml;charset=windows-874");
+header("Content-type: text/xml;charset=iso-8859-3");
 global $CONFIG_sql_dbname,$lang;
 $sql = new MySQL;
 $check = strip_tags($check);

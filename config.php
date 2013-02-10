@@ -57,7 +57,7 @@ $CONFIG['download_mode']		=	'1';			// Can Guests use the Download Menu? (0: No 1
 $CONFIG['player_rank_mode']		=	'1';			// Can members use the Player Ranking? (0: No 1: Yes 2: Administrator Only)
 $CONFIG['guild_rank_mode']		=	'1';			// Can members use Guild Ranking? (0: No 1: Yes 2: Administrator Only)
 $CONFIG['show_gm_ranking']		=	'0';			// Show GM users in Player Ranking? (0: No 1: Yes)
-$CONFIG['min_gmlv_ranking']		=	'50';			// Minimum GM level to not show in Player Ranking
+$CONFIG['min_groupid_ranking']	=	'1';			// Minimum Group Level to not show in Player Ranking (By default, players are Group: 0)
 $CONFIG['guild_per_page']		=	'50';			// How many guild lines on Guild Ranking Page?
 
 // Registration Settings
@@ -74,7 +74,7 @@ $CONFIG['change_email']				=	'1';			// Can members change Email? (0: No 1: Yes)
 // Character Management Settings
 $CONFIG['char_manage_mode']	=	'1';			// Can members use Character Management? (0: No 1: Yes 2: Administrator Only)
 $CONFIG['manage_zeny_mode']	=	'0';			// Can members manage their zeny? (0: No 1: Yes)
-$CONFIG['max_zeny']		=	'1000000000';		// Max Zeny for Characters? (default: 1000000000)
+$CONFIG['max_zeny']			=	'1000000000';		// Max Zeny for Characters? (default: 1000000000)
 
 // Status Server Settings
 $CONFIG['check_server']			=	'0';			// Check Server Status? (0: No 1: Yes)

@@ -265,22 +265,22 @@ $lang[EMA_mes_7]
 					redir("index.php?act=register","$lang[EMA_send_fail]",3);
 				else {
 					if ($activeid=='2') {
-						$sql->execute_query("INSERT INTO $CONFIG_sql_dbname.login (userid,user_pass,sex,email,level,state) VALUES (\"".mysql_res($POST_userid)."\",\"".$userpass."\",\"".mysql_res($POST_sex)."\",\"".$POST_email."\",0,1)",'register.php');$sql->total_query++;
+						$sql->execute_query("INSERT INTO $CONFIG_sql_dbname.login (userid,user_pass,sex,email,group_id,state) VALUES (\"".mysql_res($POST_userid)."\",\"".$userpass."\",\"".mysql_res($POST_sex)."\",\"".$POST_email."\",0,1)",'register.php');$sql->total_query++;
 					} else {
-						$sql->execute_query("INSERT INTO $CONFIG_sql_dbname.login (userid,user_pass,sex,email,level) VALUES (\"$POST_userid\",\"".$userpass."\",\"".mysql_res($POST_sex)."\",\"".$POST_email."\",0)",'register.php');$sql->total_query++;
+						$sql->execute_query("INSERT INTO $CONFIG_sql_dbname.login (userid,user_pass,sex,email,group_id) VALUES (\"$POST_userid\",\"".$userpass."\",\"".mysql_res($POST_sex)."\",\"".$POST_email."\",0)",'register.php');$sql->total_query++;
 					}
-					$query = "SELECT account_id,level FROM $CONFIG_sql_dbname.login WHERE userid=\"".mysql_res($POST_userid)."\" LIMIT 1";
+					$query = "SELECT account_id,group_id FROM $CONFIG_sql_dbname.login WHERE userid=\"".mysql_res($POST_userid)."\" LIMIT 1";
 					$sql->result = $sql->execute_query($query,'register.php');$sql->total_query++;
 					$row = $sql->fetch_row();
 					$aid = $row[account_id];
-					$level = $row[level];
+					$group_id = $row[group_id];
 					if ($activeid=='2') {
 						$sql->execute_query("UPDATE $CONFIG_sql_cpdbname.memory SET memory_value2=\"".mysql_res($aid)."\" WHERE memory_object=\"activate_id\" AND memory_value1=\"".mysql_res($active_id)."\" AND memory_value3=\"".mysql_res($active_key)."\"",'register.php');
 					}
 					$sql->execute_query("INSERT INTO $CONFIG_sql_cpdbname.user_profile (user_id,display_name,user_sls_pass,user_time_offset ,user_joined) VALUES (\"".mysql_res($aid)."\",\"".mysql_res($POST_userid)."\",\"".mysql_res($POST_userslspass)."\",\"".mysql_res($CONFIG_time_offset)."\",\"".$CP['time']."\")",'register.php');$sql->total_query++;
 					$sql->execute_query("INSERT INTO $CONFIG_sql_cpdbname.privilege (account_id,privilege) VALUES (\"".mysql_res($aid)."\",\"2\")",'register.php');$sql->total_query++;
 					if ($CONFIG_log_register)
-						$sql->execute_query("INSERT INTO $CONFIG_sql_cpdbname.register_log (Date,account_id,userid,level,ip) VALUES (NOW(),\"".mysql_res($aid)."\",\"".mysql_res($POST_userid)."\",\"".mysql_res($level)."\",\"".$CP['ip_address']."\")",'register.php');$sql->total_query++;
+						$sql->execute_query("INSERT INTO $CONFIG_sql_cpdbname.register_log (Date,account_id,userid,group_id,ip) VALUES (NOW(),\"".mysql_res($aid)."\",\"".mysql_res($POST_userid)."\",\"".mysql_res($group_id)."\",\"".$CP['ip_address']."\")",'register.php');$sql->total_query++;
 					if ($CONFIG_security_mode) {
 						$sql->execute_query("DELETE FROM $CONFIG_sql_cpdbname.security_code WHERE sc_id = \"".mysql_res($POST_security_id)."\"",'register.php',0);
 					}
