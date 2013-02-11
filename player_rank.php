@@ -48,14 +48,14 @@ echo "
 			<TD>
 				<select name=\"job\" class=\"textinput\">
 ";
-if(($GET_job >= '0' && $GET_job <= '25') || ($GET_job >= '4001' && $GET_job <= '4049') && $GET_job != 'all')
+if(($GET_job >= '0' && $GET_job <= '25') || ($GET_job >= '4001' && $GET_job <= '4049') || ($GET_job >= '4054' && $GET_job <= '4087') || ($GET_job >= '4096' && $GET_job <= '4112') || ($GET_job == '4190' && $GET_job == '4191') || ($GET_job == '4211' && $GET_job == '4212') && $GET_job != 'all')
 	$select = '';
 else {
 	$GET_job = 'all';
 	$select = ' selected';
 }
 echo "					<option value=\"all\"".$select.">All Class</option>\n";
-for($j=0;$j<=4049;$j++) {
+for($j=0;$j<=4212;$j++) {
 	if($GET_job==$j && $GET_job != 'all')
 		$select=' selected';
 	else
