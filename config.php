@@ -63,7 +63,7 @@ $CONFIG['guild_per_page']		=	'50';			// How many guild lines on Guild Ranking Pa
 // Registration Settings
 $CONFIG['register_mode']		=	'1';			// Registration Mode (0: Closed 1: Enable 2: Enable with E-Mail Activation)
 $CONFIG['md5_support']			=	'0';			// Use MD5 Encryption? (0: No 1: Yes)
-$CONFIG['security_mode']		=	'1';			// Registration-Security Code Mode (0: Unuse 1: Number 2: Alphabet 3: Number and Alphabet)
+$CONFIG['security_mode']		=	'3';			// Registration-Security Code Mode (0: Unuse 1: Number 2: Alphabet 3: Number and Alphabet)
 
 // Login Settings
 $CONFIG['change_password']			=	'1';			// Can members change password? (0: No 1: Yes)

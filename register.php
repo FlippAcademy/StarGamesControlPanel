@@ -28,7 +28,7 @@ echo "
 		<TR class=\"topic_title6\">
 			<TD class=\"title_face4\" vAlign=\"top\">
 ";
-				include_once "setting_ini_files/registration_rules.ini";
+				include_once "pages/registration_rules.ini";
 echo "
 			</TD>
 		</TR>
