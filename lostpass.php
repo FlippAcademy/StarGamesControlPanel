@@ -18,7 +18,7 @@
 -->
 <?php
 if(!$SERVER['system_safe']) exit();
-if($CONFIG_lost_pass_mode && $CONFIG_md5_support>='1') {
+if($CONFIG_lost_pass_mode || $CONFIG_md5_support>='1') {
 if($GET_code==00) {
 opmain_body("$lang[Mn_lostpass]");
 echo"<TABLE width=\"100%\" cellspacing=\"1\" cellpadding=\"5\" align=\"center\" class=\"emptytable3\">
