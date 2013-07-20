@@ -158,7 +158,7 @@ echo "		</TD>
 		$reply_num = $total-(($page-1)*$limit)+1;
 		while ($row = $sql->fetch_row()) {
 			$reply_num--;
-			$reply_date = get_date("Y-m-j H:i:s",$row[date]);
+			$reply_date = get_date("D-M-Y H:i:s",$row[date]);
 			$reply_message = replace_text($row[report]);
 			if ($row[sex] == 'M')
 				$bsex = "<img src=\"theme/$STORED[THEME]/images/male.gif\" border=\"0\">";

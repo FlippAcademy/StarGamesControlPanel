@@ -100,7 +100,7 @@ $CONFIG['t_per_page']			=	'15';                          // Maximum topic per fo
 $CONFIG['per_page']				=	'20';                          // Maximum reply per topic showing page
 $CONFIG['max_post_length']		=	'20480';                       // Maximum Post Length
 $CONFIG['max_signature_length']	=	'500';                         // Maximum signature length
-$CONFIG['guest_can_post']		=	'1';                           // Can Guests post/reply to topics? (0: No 1: Yes)
+$CONFIG['guest_can_post']		=	'0';                           // Can Guests post/reply to topics? (0: No 1: Yes)
 
 // Log Setting
 $CONFIG['log_select']		=	'0';             // Log SELECT queries?
