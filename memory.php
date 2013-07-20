@@ -29,7 +29,7 @@ if (get_magic_quotes_gpc()) {
     CP_arrayWalkRecursive($_REQUEST, 'stripslashes', true);
 }
 
-include_once "config.php";
+include_once "config/config.php";
 include_once "extract.inc.php";
 include_once "function/function.php";
 include_once "function/job_class.php";

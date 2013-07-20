@@ -14,10 +14,11 @@
 // =========================================================================
 // Project Lead by: Mysterious
 // =========================================================================
+// To change the message that is outputted, edit the file in /lang/English.php 
 -->
 <?php
 if(!$SERVER['system_safe']) exit();
-if($CONFIG_lost_pass_mode && $CONFIG_md5_support=='0') {
+if($CONFIG_lost_pass_mode && $CONFIG_md5_support>='1') {
 if($GET_code==00) {
 opmain_body("$lang[Mn_lostpass]");
 echo"<TABLE width=\"100%\" cellspacing=\"1\" cellpadding=\"5\" align=\"center\" class=\"emptytable3\">
@@ -45,8 +46,8 @@ $sql->result = $sql->execute_query($query,'lostpass.php',0);$sql->total_query++;
 if($sql->count_rows()) {
 	$row = $sql->fetch_row();
 	$mail_subject = "Lost Password ( SGCP user registration information )";
-
 $mail_messages = sprintf("
+
 $lang[LP_mes_1]
 
 $lang[LP_mes_2]

@@ -32,7 +32,7 @@ $query = "SELECT castle_id,guild_id FROM $CONFIG_sql_dbname.guild_castle WHERE g
 $sql->result = $sql->execute_query($query,'guild_standing.php');$sql->total_query++;
 if ($sql->count_rows()>0) {
 	$countstanding=0;
-	include_once "config_guild.php";
+	include_once "config/config_guild.php";
 	while ($row = $sql->fetch_row()) {
 		$gvalue=$row[castle_id];
 		if($GUILD_CASTLE[$gvalue]){
