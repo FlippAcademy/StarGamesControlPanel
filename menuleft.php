@@ -188,7 +188,7 @@ echo "							</TD>
 
 <BR>
 ";
-								include_once "pages/exchange_link.ini";
+								include_once "pages/exchange_link.php";
 echo "							</TD>
 						</TR>
 					<TBODY>

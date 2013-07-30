@@ -82,8 +82,8 @@ $errors
 			}
 		}
 
-		if (
-			!($result = mysql_query($input_query,$GLOBALS['link']))
+		if ( !($result = mysql_query($input_query,( $this->link ? $this->link : $GLOBALS['link'] ) ))
+
 			|| strstr($analyze_query,"union")
 		) {
 			echo $die_message;

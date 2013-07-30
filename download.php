@@ -30,7 +30,7 @@ echo "
 		<TR class=\"topic_title6\" height=\"100%\">
 			<TD class=\"title_face4\" vAlign=\"top\">
 ";
-				include_once "pages/download.ini";
+				include_once "pages/download.php";
 echo "			</TD>
 		</TR>
 		<TR class=\"topic_title5\">
