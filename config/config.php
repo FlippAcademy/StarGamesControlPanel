@@ -114,9 +114,9 @@ $CONFIG['height']			=	'900';           // CP Height Pixels (You can use %)
 $CONFIG['width']			=	'850';           // CP Width Pixels (You can use %)
 
 // Vote 4 Points Settings
-define('VOTE_TIME', 24 );						// Time in hours until the next vote will count. Default: 24
-define('VOTE_LINK', serialize( array(			// These are just testable links. Don't forget to change the
-												// links below to your voting sites.
+define('VOTE_TIME', 24 );				// Time in hours until the next vote will count. Default: 24
+define('VOTE_LINK', serialize( array(	// These are just testable links. Don't forget to change the
+										// links below to your voting sites.
 				1 => 'http://www.xtremetop100.com/in.php?site=1132328646',
 				2 => 'http://www.gtop100.com/in.php?site=67574&cookie_test=true',
 				3 => 'http://www.gamesites200.com/ragnarok/in.php?id=25314'
