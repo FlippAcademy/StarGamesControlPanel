@@ -1,4 +1,4 @@
-<!--
+/*
 // =========================================================================
 //    ______                                              
 //   / __/ /____ ________ ____ ___ _  ___ ___             
@@ -14,7 +14,7 @@
 // =========================================================================
 // Project Lead by: Mysterious
 // =========================================================================
--->
+*/
 <?php
 if(!$SERVER['system_safe']) exit();
 $GET_showtopic = (int)$GET_showtopic;
@@ -318,7 +318,7 @@ echo "							</TD>
 								$status_bar
 ";
 	if($IS_DELETE_POST && $reply_num != '1')
-		$reply_del="<a href=\"javascript:delete_post('index.php?act=post&code=03&t=$GET_showtopic&p=$row[reply_id]')\"><img src=\"theme/$STORED[THEME]/images/webboard/p_delete.gif\" border=\"0\" alt=\"Delete Post\"></a>";
+		$reply_del="<a href=\"javascript:delete_post('index.php?act=post&code=03&t=$GET_showtopic&p=$row[reply_id]')\"><img src=\"theme/$STORED[THEME]/images/webboard/p_delete.gif\" border=\"0\" alt=\"Deleteï¿½Post\"></a>";
 	else
 		$reply_del='';
 echo "							</TD>
@@ -333,14 +333,14 @@ echo "							</TD>
 												$reply_del
 ";
 	if(!empty($CP[login_id]) && ($CP[login_id] == $row[reply_user_id] || $IS_EDIT_POST))
-echo "<a style='text-decoration:none;' id=\"edit_post_".$row[reply_id]."\" href=\"index.php?act=post&code=02&f=$forum_id&t=$GET_showtopic&p=$row[reply_id]\"><img src=\"theme/$STORED[THEME]/images/webboard/p_edit.gif\" border=\"0\" alt=\"Edit Post\"></a>
+echo "<a style='text-decoration:none;' id=\"edit_post_".$row[reply_id]."\" href=\"index.php?act=post&code=02&f=$forum_id&t=$GET_showtopic&p=$row[reply_id]\"><img src=\"theme/$STORED[THEME]/images/webboard/p_edit.gif\" border=\"0\" alt=\"Editï¿½Post\"></a>
 <script type='text/javascript'>
 menu_build_menu('edit_post_".$row[reply_id]."','85',
 	new Array('<a id=\'Button\' onclick=\"hyperlink(\'index.php?act=post&code=02&f=$forum_id&t=$GET_showtopic&p=$row[reply_id]\');return false;\" href=\"#\">Full Edit</a>',
 	'<a id=\'Button\' onclick=\"quick_edit(\'replyid_".$row[reply_id]."\',\'p=$row[reply_id]\');return false;\" href=\"#\">Quick Edit</a>'));
 </script>
 ";
-echo "												<a href=\"index.php?act=post&code=01&f=$forum_id&t=$GET_showtopic&qpid=$row[reply_id]\"><img src=\"theme/$STORED[THEME]/images/webboard/p_quote.gif\" border=\"0\" alt=\"Quote Post\"></a>
+echo "												<a href=\"index.php?act=post&code=01&f=$forum_id&t=$GET_showtopic&qpid=$row[reply_id]\"><img src=\"theme/$STORED[THEME]/images/webboard/p_quote.gif\" border=\"0\" alt=\"Quoteï¿½Post\"></a>
 											</TD>
 										</TR>
 									</TBODY>
@@ -445,7 +445,7 @@ echo "								</TD>
 							</TR>
 							<TR class=\"topic_title5\" align=\"center\">
 								<TD>
-									<input type=\"submit\" name=\"Submit\" value=\"Add Reply\" class=\"textinput\" onclick=\"return CheckPostlength('t_post_form','$CONFIG_max_post_length');\">
+									<input type=\"submit\" name=\"Submit\" value=\"Addï¿½Reply\" class=\"textinput\" onclick=\"return CheckPostlength('t_post_form','$CONFIG_max_post_length');\">
 									<input type=\"button\" name=\"Button\" value=\"Close Fast Reply\" class=\"textinput\" onclick=\"ShowHide('qr_open')\">
 								</TD>
 							</TR>
