@@ -1,4 +1,4 @@
-<!--
+/*
 // =========================================================================
 //    ______                                              
 //   / __/ /____ ________ ____ ___ _  ___ ___             
@@ -14,7 +14,7 @@
 // =========================================================================
 // Project Lead by: Mysterious
 // =========================================================================
--->
+*/
 <?php
 if(!$SERVER['system_safe']) exit();
 if(checkprivilege_action($CP[login_id],g_edit_mes_control)){
@@ -66,7 +66,7 @@ echo "			</TD>
 		<TR class=\"topic_title5\">
 			<TD align=\"center\">
 				<select name=\"change_edit\" onChange=\"if(document.t_post_form.change_edit.value==-1){return false;}else{var A1=document.t_post_form.change_edit.value; document.location.replace(''+A1+'');}\" class=\"selectmenu\">
-					<option value=\"-1\" selected>     -- Select Action --    </option>
+					<option value=\"-1\" selected>ï¿½ï¿½ï¿½ï¿½ --ï¿½Select Actionï¿½--ï¿½ï¿½ï¿½ï¿½</option>
 ";
 $selected = "value=\"-1\" class=\"slbackground\"";
 $ADD_OPTION1 = $GET_code==00?$selected:"value=\"index.php?act=mesctrl&code=00\"";

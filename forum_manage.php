@@ -1,4 +1,4 @@
-<!--
+/*
 // =========================================================================
 //    ______                                              
 //   / __/ /____ ________ ____ ___ _  ___ ___             
@@ -14,7 +14,7 @@
 // =========================================================================
 // Project Lead by: Mysterious
 // =========================================================================
--->
+*/
 <?php
 if(!$SERVER['system_safe']) exit();
 if(checkprivilege_action($CP[login_id],g_forum_manage)){
@@ -236,7 +236,7 @@ echo "<TABLE width=\"100%\" cellspacing=\"1\" cellpadding=\"5\" align=\"center\"
 		</TR>
 			<TR class=\"topic_title5\">
 				<TD width=\"100%\" colspan=\"2\" align=\"center\">
-					<input type=\"submit\" name=\"Submit\" value=\"Create this category\" class=\"textinput\">
+					<input type=\"submit\" name=\"Submit\" value=\"Createï¿½thisï¿½category\" class=\"textinput\">
 					<input type=\"reset\" name=\"Reset\" value=\"Reset\" class=\"textinput\">
 				</TD>
 		</TR>
@@ -317,7 +317,7 @@ echo "</TABLE>
 echo "<TABLE width=\"100%\" cellspacing=\"1\" cellpadding=\"5\" align=\"center\">
 	<TR class=\"topic_title5\">
 		<TD width=\"100%\" align=\"center\">
-			<input type=\"submit\" name=\"Submit\" value=\"Create this forum\" class=\"textinput\">
+			<input type=\"submit\" name=\"Submit\" value=\"Createï¿½thisï¿½forum\" class=\"textinput\">
 			<input type=\"reset\" name=\"Reset\" value=\"Reset\" class=\"textinput\">
 		</TD>
 	</TR>
@@ -345,7 +345,7 @@ echo "<TABLE width=\"100%\" cellspacing=\"1\" cellpadding=\"5\" align=\"center\"
 		</TR>
 			<TR class=\"topic_title5\">
 				<TD width=\"100%\" colspan=\"2\" align=\"center\">
-					<input type=\"submit\" name=\"Submit\" value=\"Edit this category\" class=\"textinput\">
+					<input type=\"submit\" name=\"Submit\" value=\"Editï¿½thisï¿½category\" class=\"textinput\">
 					<input type=\"reset\" name=\"Reset\" value=\"Restore\" class=\"textinput\">
 				</TD>
 		</TR>
@@ -439,7 +439,7 @@ echo "</TABLE>
 echo "<TABLE width=\"100%\" cellspacing=\"1\" cellpadding=\"5\" align=\"center\">
 	<TR class=\"topic_title5\">
 		<TD width=\"100%\" align=\"center\">
-			<input type=\"submit\" name=\"Submit\" value=\"Edit this forum\" class=\"textinput\">
+			<input type=\"submit\" name=\"Submit\" value=\"Editï¿½thisï¿½forum\" class=\"textinput\">
 			<input type=\"reset\" name=\"Reset\" value=\"Restore\" class=\"textinput\">
 		</TD>
 	</TR>
@@ -467,7 +467,7 @@ echo "<TABLE width=\"100%\" cellspacing=\"1\" cellpadding=\"5\" align=\"center\"
 		</TR>
 			<TR class=\"topic_title5\">
 				<TD width=\"100%\" colspan=\"2\" align=\"center\">
-					<input type=\"submit\" name=\"Submit\" value=\"Delete this category\" class=\"textinput\">
+					<input type=\"submit\" name=\"Submit\" value=\"Deleteï¿½thisï¿½category\" class=\"textinput\">
 				</TD>
 		</TR>
 	</form>
@@ -493,7 +493,7 @@ echo "<TABLE width=\"100%\" cellspacing=\"1\" cellpadding=\"5\" align=\"center\"
 		</TR>
 			<TR class=\"topic_title5\">
 				<TD width=\"100%\" colspan=\"2\" align=\"center\">
-					<input type=\"submit\" name=\"Submit\" value=\"Delete this forum\" class=\"textinput\">
+					<input type=\"submit\" name=\"Submit\" value=\"Deleteï¿½thisï¿½forum\" class=\"textinput\">
 				</TD>
 		</TR>
 	</form>

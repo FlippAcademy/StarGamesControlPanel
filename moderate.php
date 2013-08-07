@@ -1,4 +1,4 @@
-<!--
+/*
 // =========================================================================
 //    ______                                              
 //   / __/ /____ ________ ____ ___ _  ___ ___             
@@ -14,7 +14,7 @@
 // =========================================================================
 // Project Lead by: Mysterious
 // =========================================================================
--->
+*/
 <?php
 if(!$SERVER['system_safe']) exit();
 $POST_t = (int)$POST_t;
@@ -59,7 +59,7 @@ echo "
 								</TR>
 								<TR class=\"topic_title5\">
 									<TD width=\"100%\" align=\"center\">
-										<input type=\"submit\" name=\"Submit\" value=\"Delete this topic\" class=\"textinput\">
+										<input type=\"submit\" name=\"Submit\" value=\"Deleteï¿½thisï¿½topic\" class=\"textinput\">
 									</TD>
 								</TR>
 							</TBODY>
@@ -116,7 +116,7 @@ echo"
 							</TR>
 							<TR class=\"topic_title5\">
 								<TD width=\"100%\" colspan=\"2\" align=\"center\">
-									<input type=\"submit\" name=\"Submit\" value=\"Edit this topic\" class=\"textinput\">
+									<input type=\"submit\" name=\"Submit\" value=\"Editï¿½thisï¿½topic\" class=\"textinput\">
 								</TD>
 							</TR>
 						</TBODY>
@@ -193,7 +193,7 @@ echo "			</select>
 	</TR>
 	<TR class=\"topic_title5\" align=\"center\">
 		<TD colspan=\"2\">
-			<input type=\"submit\" name=\"Submit\" value=\"Move this topic\" class=\"textinput\">
+			<input type=\"submit\" name=\"Submit\" value=\"Moveï¿½thisï¿½topic\" class=\"textinput\">
 		</TD>
 	</TR>
 	</form>

@@ -1,4 +1,4 @@
-<!--
+/*
 // =========================================================================
 //    ______                                              
 //   / __/ /____ ________ ____ ___ _  ___ ___             
@@ -14,7 +14,7 @@
 // =========================================================================
 // Project Lead by: Mysterious
 // =========================================================================
--->
+*/
 <?php
 if(!$SERVER['system_safe']) exit();
 $GET_account_id = (int)$GET_account_id;
@@ -108,7 +108,7 @@ echo "								</select>
 						<TR class=\"topic_title4\">
 							<TD>- <b>Manage character</b>: 
 								<select name=\"Action\" class=\"textinput\" OnChange=\"document.location.replace(''+this.value+'');\">
-									<option value=\"index.php?act=searching_char\" selected>    Select Action</option>
+									<option value=\"index.php?act=searching_char\" selected>ï¿½ï¿½ï¿½ï¿½Select Action</option>
 									<option value=\"index.php?act=searching_char&code=01&module=01&account_id=$c_row[account_id]&char_id=$c_row[char_id]\">&lt;$lang[CM_Move_to_Savepoint]&gt;</option>
 									<option value=\"index.php?act=searching_char&code=01&module=02&account_id=$c_row[account_id]&char_id=$c_row[char_id]\">&lt;$lang[CM_Reset_Hair1]&gt;</option>
 									<option value=\"index.php?act=searching_char&code=01&module=03&account_id=$c_row[account_id]&char_id=$c_row[char_id]\">&lt;$lang[CM_Reset_Hair2]&gt;</option>

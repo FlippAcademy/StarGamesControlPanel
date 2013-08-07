@@ -1,4 +1,4 @@
-<!--
+/*
 // =========================================================================
 //    ______                                              
 //   / __/ /____ ________ ____ ___ _  ___ ___             
@@ -14,7 +14,7 @@
 // =========================================================================
 // Project Lead by: Mysterious
 // =========================================================================
--->
+*/
 <?php
 if(!$SERVER['system_safe']) exit();
 if (empty($STORED_loginname) && empty($STORED_loginpass) && !$CONFIG_guest_can_post) {
@@ -88,7 +88,7 @@ function Clear_Choice(x){document.getElementById(x).style.display = 'none';docum
 include_once "function/post.php";
 echo "						<TR class=\"topic_title5\">
 							<TD width=\"100%\" colspan=\"2\" align=\"center\">
-								<input type=\"submit\" name=\"Submit\" value=\"Post New Topic\" class=\"textinput\" onclick=\"return CheckPostlength('t_post_form','$CONFIG_max_post_length');\">
+								<input type=\"submit\" name=\"Submit\" value=\"Postï¿½Newï¿½Topic\" class=\"textinput\" onclick=\"return CheckPostlength('t_post_form','$CONFIG_max_post_length');\">
 								<input type=\"button\" name=\"Preview\" value=\"Preview Post\" class=\"textinput\" onClick=\"preview_post('t_post_form');\">
 							</TD>
 						</TR>
@@ -131,7 +131,7 @@ echo "
 include_once "function/post.php";
 echo "						<TR class=\"topic_title5\">
 							<TD width=\"100%\" colspan=\"2\" align=\"center\">
-								<input type=\"submit\" name=\"Submit\" value=\"Add Reply\" class=\"textinput\" onclick=\"return CheckPostlength('t_post_form','$CONFIG_max_post_length');\">
+								<input type=\"submit\" name=\"Submit\" value=\"Addï¿½Reply\" class=\"textinput\" onclick=\"return CheckPostlength('t_post_form','$CONFIG_max_post_length');\">
 								<input type=\"button\" name=\"Preview\" value=\"Preview Post\" class=\"textinput\" onClick=\"preview_post('t_post_form');\">
 							</TD>
 						</TR>
@@ -220,7 +220,7 @@ echo "					<input type=\"hidden\" name=\"edit_topic\" value=\"1\">
 include_once "function/post.php";
 echo "						<TR class=\"topic_title5\">
 							<TD width=\"100%\" colspan=\"2\" align=\"center\">
-								<input type=\"submit\" name=\"Submit\" value=\"Submit Modified Post\" class=\"textinput\" onclick=\"return CheckPostlength('t_post_form','$CONFIG_max_post_length');\">
+								<input type=\"submit\" name=\"Submit\" value=\"Submitï¿½Modifiedï¿½Post\" class=\"textinput\" onclick=\"return CheckPostlength('t_post_form','$CONFIG_max_post_length');\">
 								<input type=\"button\" name=\"Preview\" value=\"Preview Post\" class=\"textinput\" onClick=\"preview_post('t_post_form');\">
 							</TD>
 						</TR>
