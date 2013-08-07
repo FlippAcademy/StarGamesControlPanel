@@ -1,4 +1,4 @@
-<!--
+/*
 // =========================================================================
 //    ______                                              
 //   / __/ /____ ________ ____ ___ _  ___ ___             
@@ -14,7 +14,7 @@
 // =========================================================================
 // Project Lead by: Mysterious
 // =========================================================================
--->
+*/
 <?php
 if(!$SERVER['system_safe']) exit();
 if(checkprivilege_action($CP[login_id],g_read_privilege)) {
@@ -187,7 +187,7 @@ echo "
 											$row[g_title]
 										</TD>
 										<TD>
-											<a href=\"index.php?act=privilege&code=03&gid=$row[g_id]\" title=\"бЎйдў\"><img src =\"theme/$STORED[THEME]/images/edit.gif\" border=\"0\"></a>
+											<a href=\"index.php?act=privilege&code=03&gid=$row[g_id]\" title=\"пїЅпїЅпїЅпїЅпїЅ\"><img src =\"theme/$STORED[THEME]/images/edit.gif\" border=\"0\"></a>
 										</TD>
 										<TD>
 											<a href=\"index.php?act=privilege_action&code=03&g_id=$row[g_id]\" title=\"Еє\"><img src =\"theme/$STORED[THEME]/images/drop.gif\" border=\"0\"></a>
