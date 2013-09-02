@@ -18,7 +18,9 @@ if( !isset( $site ) || !isset( $link[ $site ] ) ){
 } else if( !isset( $STORED_loginname ) ){
 	votes();
 } else {
-	$sql->result = $sql->execute_query( "SELECT `last_vote".$site."` FROM $CONFIG_sql_dbname.`vote_point` WHERE `loginname` = '".$STORED_loginname."' LIMIT 0,1", "vote.php" );
+	$STORED_loginname = mysql_res($STORED_loginname);
+	$sql->result      = $sql->execute_query( "SELECT `last_vote".$site."` FROM $CONFIG_sql_dbname.`vote_point` WHERE `loginname` = '".$STORED_loginname."' LIMIT 0,1", "vote.php" );
+
 	if( $sql->count_rows() > 0 ) {
 		$row = $sql->fetch_row();
 
