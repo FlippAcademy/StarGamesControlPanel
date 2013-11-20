@@ -1,4 +1,4 @@
-/*
+<!--
 // =========================================================================
 //    ______                                              
 //   / __/ /____ ________ ____ ___ _  ___ ___             
@@ -15,7 +15,7 @@
 // Project Lead by: Mysterious
 // =========================================================================
 // To change the message that is outputted, edit the file in /lang/English.php 
-*/
+-->
 <?php
 if(!$SERVER['system_safe']) exit();
 if($CONFIG_lost_pass_mode || $CONFIG_md5_support>='1') {
