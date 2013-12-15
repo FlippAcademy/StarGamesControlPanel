@@ -221,7 +221,7 @@ global $CONFIG_sql_cpdbname,$CONFIG_account_id_start,$STORED,$display_name,$repl
 	$reply_signature = $row_user["user_signature_message"];
 	$user_status = $row_user["user_online"];
 	if($reply_avatar != NULL)
-		$reply_avatar = "<img width=\"$reply_avatar_width\" height=\"$reply_avatar_height\" border=\"0\" alt=\"userï¿½avatar\" src=\"$reply_avatar\">";
+		$reply_avatar = "<img width=\"$reply_avatar_width\" height=\"$reply_avatar_height\" border=\"0\" alt=\"user avatar\" src=\"$reply_avatar\">";
 	$status_bar = $user_status ? "\"theme/$STORED[THEME]/images/p_online.gif\" alt=\"Online\"" : "\"theme/$STORED[THEME]/images/p_offline.gif\" alt=\"Offline\"";
 	$status_bar = "<img src=".$status_bar." border=\"0\">";
 	$rank_title = get_ranktitle($reply_post);
@@ -437,7 +437,7 @@ return $row[title];
 }
 function get_ip() {
 if(getenv(HTTP_X_FORWARDED_FOR))
-	$ipaddress = mysql_res( getenv(HTTP_X_FORWARDED_FOR) );
+	$ipaddress = getenv(HTTP_X_FORWARDED_FOR);
 else
 	$ipaddress = getenv("REMOTE_ADDR");
 return $ipaddress;
@@ -729,14 +729,14 @@ function regex_image_url($matches=array()) {
 	if(!$CP['images_num'])
 		$CP['images_num'] = 0;
 	$CP['images_num']++;
-	return "<span id=\"image_".$CP[images_num]."\"><a href=\"$matches[1]\" target=\"_blank\"><img name=\"user_posted_image_".$CP[images_num]."\" src=\"$matches[2]\" border=\"0\" alt=\"userï¿½postedï¿½image\"></a></span>";
+	return "<span id=\"image_".$CP[images_num]."\"><a href=\"$matches[1]\" target=\"_blank\"><img name=\"user_posted_image_".$CP[images_num]."\" src=\"$matches[2]\" border=\"0\" alt=\"user posted image\"></a></span>";
 }
 function regex_image($matches=array()) {
 	global $CP;
 	if(!$CP['images_num'])
 		$CP['images_num'] = 0;
 	$CP['images_num']++;
-	return "<span id=\"image_".$CP[images_num]."\"><img name=\"user_posted_image_".$CP[images_num]."\" src=\"$matches[1]\" border=\"0\" alt=\"userï¿½postedï¿½image\"></span>";
+	return "<span id=\"image_".$CP[images_num]."\"><img name=\"user_posted_image_".$CP[images_num]."\" src=\"$matches[1]\" border=\"0\" alt=\"user posted image\"></span>";
 }
 function regex_list($matches=array()) {
 	if ( count( $matches ) == 3 ) {
